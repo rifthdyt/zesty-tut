@@ -16,8 +16,8 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}help`){
-    message.channel.send("Pong!");
+  if (cmd === `${prefix}youtube`){
+    message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
   }
 
 
