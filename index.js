@@ -18,9 +18,6 @@ bot.on("message", async message => {
 
   if (cmd === `${prefix}ping`){
     message.channel.send("Pong!");
-    
-  if (command === "foo"){
-    mesage.channel.sendMessage("bar!");
   }
 
 });
