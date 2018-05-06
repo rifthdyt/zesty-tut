@@ -20,6 +20,15 @@ bot.on("message", async message => {
     message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
   }
   
+  let prefix = '+';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}youtube`){
+    message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
+  }
+  
 });
 
 bot.login(process.env.token);
