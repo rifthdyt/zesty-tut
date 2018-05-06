@@ -18,7 +18,7 @@ bot.on("message", async message => {
 
   if (cmd === `${prefix}youtube`){
     message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
-  }
+  });
   bot.on("message", async message => {
 
   if (message.author.bot) return;
