@@ -6,20 +6,58 @@ bot.on("ready", async () => {
   bot.user.setActivity(`WORLD IN WAR`);
 });
 
-bot.on("message", async message => {
 
-  if (message.author.bot) return;
-  if (message.channel.type === "dm") return;
+bot.on("message",function(message) {
+    if (message.content == "hello") {
+        message.channel.sendMessage("HELLO, THERE");
+    }
+    });
 
-  let prefix = '+';
-  let messageArray = message.content.split(" ");
-  let cmd = messageArray[0];
-  let args = messageArray.slice(1);
+    bot.on("message", async message => {
 
-  if (cmd === `${prefix}youtube`){
-    message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
-  }
-  
-});
+        if (message.author.bot) return;
+        if (message.channel.type === "dm") return;
+
+        let prefix = '$';
+        let messageArray = message.content.split(" ");
+        let cmd = messageArray[0];
+        let args = messageArray.slice(1);
+
+        if (cmd === `${prefix}youtube`) {
+            message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
+        }
+
+    });
+
+    bot.on("message", async message => {
+
+                if (message.author.bot) return;
+                if (message.channel.type === "dm") return;
+
+                let prefix = '$';
+                let messageArray = message.content.split(" ");
+                let cmd = messageArray[0];
+                let args = messageArray.slice(1);
+
+                if (cmd === `${prefix}studio`) {
+                    message.channel.send("RITEX STUDIO");
+                }
+            });
+
+    bot.on("message", async message => {
+
+        if (message.author.bot) return;
+        if (message.channel.type === "dm") return;
+
+        let prefix = '$';
+        let messageArray = message.content.split(" ");
+        let cmd = messageArray[0];
+        let args = messageArray.slice(1);
+
+        if (cmd === `${prefix}twitter`) {
+            message.channel.send("https://twitter.com/World_inWar?s=9");
+        }
+    });
+
 
 bot.login(process.env.token);
