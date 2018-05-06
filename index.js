@@ -9,7 +9,7 @@ bot.on("ready", async () => {
 
 bot.on("message",function(message) {
     if (message.content == "hello") {
-        message.channel.sendMessage("HELLO, THERE");
+        message.channel.sendMessage("HI, THERE");
     }
     });
 
