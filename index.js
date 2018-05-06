@@ -20,12 +20,11 @@ bot.on("message", async message => {
     message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
   }
   
-  let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}youtube`){
-    message.channel.send("https://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
+  if (cmd === `${prefix}youttube`){
+    message.channel.send("thttps://www.youtube.com/channel/UC00U2crvBmhXNu9pmQRhH3g");
   }
   
 });
